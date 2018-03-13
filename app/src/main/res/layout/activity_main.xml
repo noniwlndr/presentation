@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="company.naz.presentation.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Form Peminatan"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tvnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="masukan nama"
+            android:layout_below="@+id/form"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/acnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/form" />
+
+        <TextView
+            android:id="@+id/jk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jenis kelamin"
+            android:layout_below="@id/acnama"/>
+
+        <RadioButton
+            android:id="@+id/pr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="perempuan"
+            android:layout_below="@+id/jk"/>
+
+        <RadioButton
+            android:id="@+id/lk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="laki-laki"
+            android:layout_below="@+id/jk"
+            android:layout_toRightOf="@+id/pr"/>
+
+        <ImageButton
+            android:id="@+id/imgbtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/lk"
+            android:src="@drawable/ic_launcher_foreground"
+            />
+
+        <ToggleButton
+            android:id="@+id/tglbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgbtn"/>
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tglbtn"/>
+
+        <Switch
+            android:id="@+id/switchbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingbar"/>
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switchbtn"
+            />
+
+        <CheckBox android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="apakah anda menyetujui terms dan condition?"
+            android:layout_below="@+id/seekbar"/>
+        </RelativeLayout>
+</LinearLayout>
